@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #111111;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C5A572;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b08c5a;
+}
+
+@layer utilities {
+  .text-fluid-h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.4;
+  }
+  
+  .text-fluid-h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.4;
+  }
+  
+  .text-fluid-body {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    line-height: 1.6;
+  }
+
+  .will-change-transform {
+    will-change: transform;
+  }
+}
+
+@layer components {
+  .luxury-button {
+    @apply px-8 py-4 bg-luxury-gold text-white font-inter font-semibold tracking-wide 
+    transition-all duration-[800ms] ease-in-out hover:scale-105 hover:shadow-xl;
+  }
+
+  .luxury-button-outline {
+    @apply px-8 py-4 border-2 border-luxury-gold text-luxury-gold font-inter font-semibold 
+    tracking-wide transition-all duration-[800ms] ease-in-out hover:bg-luxury-gold 
+    hover:text-white hover:scale-105 hover:shadow-xl;
+  }
+
+  .section-container {
+    @apply max-w-container mx-auto px-6 lg:px-12;
+  }
+
+  .gold-accent-line {
+    @apply h-0.5 w-16 bg-luxury-gold;
+  }
+}
