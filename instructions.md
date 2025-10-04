@@ -2,13 +2,7 @@
 
 This document contains the complete specifications for building a modern, luxury fashion brand website.
 
----
 
-### 🏗 **Prompt:**
-
-Build a **modern, luxury fashion brand website** using **React (or Next.js)** + **Tailwind CSS** + **Framer Motion** + **GSAP ScrollTrigger**.
-
-The website should look **elegant, premium, and smooth**, with **consistent animations**, **fluid typography**, **precise layouts**, and a **cinematic scrolling experience**. All design elements, transitions, and section structures must follow a **minimalist luxury aesthetic** suitable for high-end fashion stores or boutiques.
 
 ---
 
@@ -263,6 +257,4 @@ This structure is ideal for **premium fashion brands**, **boutiques**, **jewelry
 
 ---
 
-## 📁 Assets
 
-Use assets from the ASSETS folder for images and branding elements.
